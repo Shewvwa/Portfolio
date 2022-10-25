@@ -938,6 +938,19 @@ html {
   margin-right: 10px;
 }
 
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.pageup img {
+  width: 100%;
+}
+
 @media (max-width: 1439px) {
   .sidepanel {
     display: none;
@@ -1173,16 +1186,7 @@ html {
   .contacts_form {
     grid-template: 45px 120px 63px/repeat(2, 140px);
   }
-}
-.pageup {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 40px;
-  height: 40px;
-}
-
-.pageup img {
-  width: 100%;
+  .pageup {
+    right: 20px;
+  }
 }
