@@ -1,0 +1,296 @@
+@media(max-width:1439px){
+    .sidepanel{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .me_block_wrapper_descr{
+        width: 235px;
+    }
+    .sidepanel{
+        display: none;
+    }
+
+
+    .resume{
+        &_wrapper{
+            column-gap: 24px;
+        }
+    }
+    .work{
+        &_wrapper{
+            grid-template-columns: repeat(3, 270px);
+        }
+        &_loading{
+            grid-template-columns: repeat(2, 350px);
+        }
+    }
+    .portfolio{
+        &_wrapper{
+            grid-template: repeat(2, 230px)/repeat(4, 230px);
+        }
+    }
+    .contacts{
+        &_wrapper{
+            grid-template-columns: 326px 565px;
+            column-gap: 15px;
+        }
+        &_foto{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+    .me{
+        padding: 40px 0;
+    }
+    .me_wrapper{
+        flex-direction: column;
+    }
+    .me_foto{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .me_block_wrapper_descr{
+        width: 319px;
+    }
+
+
+    .resume{
+        &_wrapper{
+            padding: 60px 0;
+            grid-template-columns: repeat(2, 353px);
+            margin-bottom: 0;
+        }
+    }
+    .work{
+        &_wrapper{
+            grid-template-columns: repeat(2, 270px);
+        }
+        &_loading{
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
+    .portfolio{
+        &_wrapper{
+            grid-template: repeat(2, 230px)/repeat(3, 230px);
+            .vertical{
+                grid-row: 2/3;
+                grid-column: 2/3;
+            }
+            .horizontal{
+                grid-column: 3/4;
+            }
+        }
+        &_item{
+            
+            
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+    .price{
+        &_grid{
+            grid-template: repeat(3, 44px)/repeat(2, 300px);
+            row-gap: 30px;
+        }
+    }
+    .contacts{
+        &_wrapper{
+            grid-template-columns: 314px 337px;
+            padding: 0 16px 0 10px;
+        }
+        &_btn{
+            height: 62px;
+            .btn{
+                height: 62px;
+            }
+        }
+        &_form{
+            grid-template: 45px 140px 63px/repeat(2, 160px);
+        }
+    }
+}
+
+.horizontal{
+    display: flex;
+}
+
+
+@media(max-width:768px){
+    .container{
+        max-width: 540px;
+    }
+    
+    
+    .promo{
+        padding-top: 285px;
+        background: url(../img/IMG_1231.png) no-repeat 40%/cover;
+    
+        &_title{
+            width: 510px;
+            line-height: 55px;
+        }
+    }
+    .me_block_wrapper_descr{
+        width: 416px;
+    }
+    .resume{
+        &_wrapper{
+            grid-template-columns: repeat(2, 260px);
+
+        }
+    }
+    .work{
+        &_wrapper{
+            gap: 4px;
+        }
+        &_loading{
+            grid-template-columns: repeat(2, 230px);
+        }
+    }
+    .portfolio{
+        &_wrapper{
+            grid-template-columns: repeat(2, 280px);
+            grid-template-rows: 280px;
+            .horizontal, .vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .price{
+        padding: 66px 0 17px 0;
+        &_grid{
+            grid-template: repeat(3, 120px)/repeat(2, 230px);
+            row-gap: 0px;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+    }
+    .contacts{
+        &_wrapper{
+            grid-template-columns: unset;
+            grid-template: repeat(1, 150px)/repeat(1, 450px);
+            row-gap: 30px;
+            justify-content: center;
+        }
+        &_form{
+            grid-template: 45px 140px 63px/repeat(2, 210px);
+        }
+    }
+}
+
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu{
+        &_block{
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 92px;
+        }
+        &_list{
+            padding-left: 0px;
+        }
+        &_link{
+            text-align: center;
+            line-height: 60px;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .promo{
+        padding-top: 156px;
+        background: url(../img/IMG_1231.png) no-repeat 40%/cover;
+    
+        &_title{
+            width: 300px;
+            line-height: 55px;
+        }
+    }
+    .me{
+        &_foto{
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100%;
+           
+            img{
+                width: 100%;
+                height: 100%;
+
+            }
+            
+        }
+        &_block{
+            margin-left: 6px;
+        }
+    }
+    .resume{
+        &_wrapper{
+            grid-template-columns: repeat(1, 323px);
+            padding-left: 20px;
+            row-gap: 30px;
+        }
+    }
+    .work{
+        &_wrapper{
+            grid-template-columns: repeat(1, 270px);
+            gap: 10px;
+        }
+        &_loading{
+            grid-template-columns: repeat(1, 230px);
+        }
+    }
+    .portfolio{
+        &_wrapper{
+            grid-template-columns: repeat(1, 280px);
+            grid-template-rows: 280px;
+            gap: 20px;
+            .horizontal, .vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .price{
+        padding: 66px 0 58px 0;
+        &_grid{
+            grid-template: repeat(6, 62px)/repeat(1, 300px);
+            row-gap: 20px;
+            justify-content: center;
+            padding: 0 10px;
+        }
+    }
+    .contacts{
+        &_foto{
+            display: none;
+        }
+        &_wrapper{
+            grid-template-columns: unset;
+            grid-template: repeat(1, 150px)/repeat(1, 300px);
+            row-gap: 30px;
+            justify-content: center;
+        }
+        &_form{
+            grid-template: 45px 120px 63px/repeat(2, 140px);
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.me{
+    padding: 120px 0;
+    &_wrapper{
+        display: flex;
+    }
+    &_block{
+        margin-left: 70px;
+        .title{
+            margin-bottom: 6px;
+        }
+        h1{
+            margin-bottom: 4px;
+        }
+        &_divider{
+            width: 60px;
+            height: 0px;
+            margin-bottom: 24px;
+            border: 2px solid $main-color;
+            background-color: $main-color;
+        }
+        &_text{
+            margin-bottom: 40px;
+            
+        }
+        &_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &_descr{
+                display: flex;
+                width: 320px;
+                height: 100%;
+                margin-bottom: 40px;
+                &_logo{
+                    
+                    margin-right: 40px;
+                    img{
+                        margin-left: 40%;
+                        margin-top: 80%;
+                    }
+                }
+                &_subtitle{
+                    font-size: 12px;
+                    h1{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.circle{
+    position: relative;
+    @include before_circle;
+}
+.phone{
+    img{
+        margin-left: 130%;
+        margin-top: 110%;
+    }
+}

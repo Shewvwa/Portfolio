@@ -1,0 +1,36 @@
+.price{
+    padding: 66px 0 120px 0;
+    &_title{
+        margin-bottom: 31px;
+    }
+    &_grid{
+        display: grid;
+        grid-template: repeat(3, 44px) / repeat(2, 366px); 
+        justify-content: space-between;
+        row-gap: 15px;
+        padding: 0 51px;
+        &_wrapper{
+            position: relative;
+            padding-left: 25px;
+            @include before_circle3;
+            &_wrapper{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                &_title{
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                &_subtitle{
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+        &_descr{
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+    
+}
