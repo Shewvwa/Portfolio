@@ -1046,7 +1046,7 @@ html {
   }
   .promo {
     padding-top: 285px;
-    background: url(../img/IMG_1231.png) no-repeat 40%/cover;
+    background: url(../img/face.png) no-repeat 40%/cover;
   }
   .promo_title {
     width: 510px;
@@ -1113,7 +1113,7 @@ html {
   }
   .promo {
     padding-top: 156px;
-    background: url(../img/IMG_1231.png) no-repeat 40%/cover;
+    background-color: #FFEE00;
   }
   .promo_title {
     width: 300px;
