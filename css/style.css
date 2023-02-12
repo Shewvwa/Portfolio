@@ -318,6 +318,10 @@ html {
   background: url("../img/face.png") no-repeat 80%/cover;
   padding-top: 205px;
 }
+.promo.active {
+  transition: all 0.5s;
+  filter: blur(8px);
+}
 .promo_title {
   width: 535px;
   margin-top: 10px;
@@ -523,7 +527,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: 0.75;
+  opacity: 0;
 }
 
 .me {

@@ -3,6 +3,10 @@
     position: relative;
     background: url('../img/face.png') no-repeat 80%/cover;
     padding-top: 205px;
+    &.active{
+        transition: all 0.5s;
+        filter: blur(8px);
+    }
     &_title{
         width: 535px;
         margin-top: 10px;
