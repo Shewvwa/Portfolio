@@ -8,6 +8,9 @@
     height: 340px;
     align-items: center;
     z-index: 3;
+    &.active{
+        filter: blur(8px);
+    }
     &_divider{
         width: 2px;
         height: 70px;

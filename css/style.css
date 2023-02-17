@@ -407,6 +407,9 @@ html {
   align-items: center;
   z-index: 3;
 }
+.sidepanel.active {
+  filter: blur(8px);
+}
 .sidepanel_divider {
   width: 2px;
   height: 70px;
