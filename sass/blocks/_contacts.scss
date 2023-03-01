@@ -11,9 +11,16 @@
     }
     &_social{
         margin-top: 20px;
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
     &_link{
         margin-right: 25px;
+
         img{
             max-width: 30px;
             max-height: 30px;
