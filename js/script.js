@@ -8,18 +8,21 @@ hamburger.addEventListener('click', ()=>{
     menu.classList.add('active');
     promoactive.classList.add('active');
     sidepanel.classList.add('active');
+    document.body.style.overflow = 'hidden';
 });
 
 close.addEventListener('click', ()=>{
     menu.classList.remove('active');
     promoactive.classList.remove('active');
     sidepanel.classList.remove('active');
+    document.body.style.overflow = 'auto';
 });
 
 menu.addEventListener('click', ()=>{
     menu.classList.remove('active');
     promoactive.classList.remove('active');
     sidepanel.classList.remove('active');
+    document.body.style.overflow = 'auto';
 });
 
 

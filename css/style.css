@@ -357,6 +357,7 @@ html {
   color: #fff;
   font-weight: bold;
   transition: all 0.5s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .promo_link:hover {
   color: #000;
@@ -393,7 +394,9 @@ html {
   height: 45px;
   background: #FFA501;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 12px 26px;
+  padding: 10px 26px;
+  border-radius: 30px;
+  text-align: center;
 }
 
 .sidepanel {
@@ -441,7 +444,7 @@ html {
   display: block;
   width: 30px;
   height: 3px;
-  background: #FFFFFF;
+  background: #000000;
 }
 .hamburger span.long {
   width: 36px;
@@ -500,15 +503,14 @@ html {
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  border: 1px solid #000;
   transition: all 0.5s;
 }
 .menu_link:hover {
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .menu_link:hover::before {
-  background-color: #000;
-  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px #ffffff;
 }
 .menu_link a {
   color: #FFFFFF;
@@ -877,6 +879,12 @@ html {
 }
 .contacts_social {
   margin-top: 20px;
+}
+.contacts_social a {
+  text-decoration: none;
+}
+.contacts_social a:hover {
+  text-decoration: none;
 }
 .contacts_link {
   margin-right: 25px;
