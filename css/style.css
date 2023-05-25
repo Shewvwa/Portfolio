@@ -315,7 +315,8 @@ html {
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url("../img/face.png") no-repeat 80%/cover;
+  background: url("../img/i.jpg") no-repeat 200px/cover;
+  background-color: #FFEE00;
   padding-top: 205px;
 }
 .promo.active {
@@ -390,7 +391,6 @@ html {
 }
 
 .btn {
-  height: 45px;
   background: #FFA501;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 26px;
@@ -738,8 +738,11 @@ html {
   justify-content: center;
 }
 .work_wrapper_item {
+  transition: all 0.5s;
   border: 1px solid #000000;
   padding: 30px 30px 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px;
 }
 .work_wrapper_item img {
   margin-bottom: 20px;
@@ -750,6 +753,10 @@ html {
 .work_wrapper_item_subtitle {
   font-size: 12px;
   line-height: 18px;
+}
+.work_wrapper_item:hover {
+  transition: all 0.1s;
+  box-shadow: 10px 10px;
 }
 
 .work_loading {
@@ -804,6 +811,9 @@ html {
   grid-auto-rows: 280px;
   gap: 5px;
 }
+.portfolio_wrapper a {
+  color: #fff;
+}
 .portfolio_wrapper .vertical {
   grid-row: 1/3;
   grid-column: 4/5;
@@ -814,12 +824,36 @@ html {
 }
 .portfolio_item {
   transition: all 0.3s;
+  text-decoration: none;
+}
+.portfolio_item .hover_wrappper {
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
 }
 .portfolio_item img {
   width: 100%;
 }
 .portfolio_item:hover {
   transform: scale(0.9);
+}
+.portfolio_item:hover .hover_wrappper {
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 20px;
+}
+.portfolio_item:hover .hover_wrappper .hover_title {
+  opacity: 1;
+  display: block;
+  position: relative;
+  color: rgb(255, 255, 255);
 }
 
 .price {

@@ -1,5 +1,8 @@
 .portfolio{
     &_wrapper{
+        a{
+            color: #fff;
+        }
         display: grid;
         justify-content: center;
         grid-template: repeat(2, 280px) / repeat(4, 280px);
@@ -16,11 +19,36 @@
     }
     &_item{
         transition: all 0.3s;
+        text-decoration: none;
+        .hover_wrappper{
+            position: absolute;
+            transition: all 0.3s;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+        }
         img{
             width: 100%;
         }
         &:hover{
             transform: scale(0.90);
+            .hover_wrappper{
+                opacity: 1;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                transition: all 0.3s;
+                padding: 20px;
+                .hover_title{
+                    opacity: 1;
+                    display: block;
+                    position: relative;
+                    color: rgb(255, 255, 255);
+                }
+            }
         }
     }
+    
 }

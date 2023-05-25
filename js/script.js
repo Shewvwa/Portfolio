@@ -1,8 +1,10 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      close = document.querySelector('.menu_close');
-      promoactive = document.querySelector('.promo');
+      close = document.querySelector('.menu_close'),
+      promoactive = document.querySelector('.promo'),
       sidepanel = document.querySelector('.sidepanel');
+
+    
 
 hamburger.addEventListener('click', ()=>{
     menu.classList.add('active');
@@ -34,6 +36,8 @@ const counter = document.querySelectorAll('.work_loading_wrapper_number'),
 counter.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 })
+
+
 
 
 

@@ -1,7 +1,8 @@
 .promo{
     min-height: 100vh;
     position: relative;
-    background: url('../img/face.png') no-repeat 80%/cover;
+    background: url('../img/i.jpg') no-repeat 200px/cover;
+    background-color: #FFEE00;
     padding-top: 205px;
     &.active{
         transition: all 0.5s;
