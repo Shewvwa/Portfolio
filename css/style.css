@@ -315,7 +315,6 @@ html {
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url("../img/i.jpg") no-repeat 200px/cover;
   background-color: #FFEE00;
   padding-top: 205px;
 }
